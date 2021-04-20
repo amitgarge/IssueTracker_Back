@@ -1,0 +1,47 @@
+Users    
+    userId
+    firstName
+    lastName
+    userType
+    password
+    email
+    mobileNumber
+
+Projects
+    projectId
+    projectName
+    projectKey    
+    
+Issues
+    issueId
+    issueType
+        -Open, Closed, In Progress or Resolved
+    projectId
+    Subject
+    Body
+    Status
+    Assignee(userId)
+    Priority
+    MileStone
+    Category
+    Version
+    Due Date
+    File
+
+Socket(for Notifications)
+Notifications
+    - Assigned a Project
+    - New Issue
+    - Changes in Issue
+
+Flow
+    User
+        -signup/Login    
+        -R U D
+        -getAllUsers
+        -getUserById
+    Add Project    
+        -CRUD
+        -Add Members    
+    Add Issue
+        -CRUD
